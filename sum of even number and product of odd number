@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() 
+{
+  
+   int a[5],i,sum=0,pro=1;
+   for(i=0;i<5;i++)
+   {
+       printf ("enter number");
+       scanf("%d",&a[i]);
+   }
+   for(i=0;i<5;i++)
+{
+    if(a[i]%2==0)
+    sum=sum+a[i];
+    else
+    pro=pro*a[i];
+}
+printf("\n sum of  even=%d ",sum);
+printf("\nproduct of odd=%d",pro);
+return 0;
+}
